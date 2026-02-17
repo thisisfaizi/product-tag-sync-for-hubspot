@@ -1,0 +1,172 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Product Tag Sync for WooCommerce & HubSpot 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/product-tag-sync-for-hubspot\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Urdu <ur@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-02-17T16:10:13+05:00\n"
+"PO-Revision-Date: 2026-02-17T16:22:00+05:00\n"
+"X-Generator: Manual\n"
+"X-Domain: product-tag-sync-for-hubspot\n"
+"Language: ur\n"
+
+#: product-tag-sync-for-hubspot.php:71
+msgid "HubSpot Product Tag Sync for WooCommerce requires WooCommerce to be installed and activated."
+msgstr "HubSpot Product Tag Sync for WooCommerce کے لیے WooCommerce کا انسٹال اور فعال ہونا ضروری ہے۔"
+
+#: includes/class-whpts-plugin.php:87
+#: admin/class-whpts-settings.php:282
+msgid "Settings"
+msgstr "ترتیبات"
+
+#: includes/class-whpts-hubspot-api.php:209
+msgid "HubSpot API token is not configured."
+msgstr "HubSpot API ٹوکن تشکیل نہیں دیا گیا ہے۔"
+
+#: includes/class-whpts-hubspot-api.php:244
+msgid "Unknown API error."
+msgstr "نامعلوم API کی خرابی۔"
+
+#: admin/class-whpts-settings.php:75
+msgid "HubSpot Product Tags"
+msgstr "HubSpot پروڈکٹ ٹیگز"
+
+#: admin/class-whpts-settings.php:76
+msgid "HubSpot Tags"
+msgstr "HubSpot ٹیگز"
+
+#: admin/class-whpts-settings.php:102
+msgid "HubSpot API Configuration"
+msgstr "HubSpot API کنفیگریشن"
+
+#: admin/class-whpts-settings.php:109
+msgid "Private App Token"
+msgstr "پرائیویٹ ایپ ٹوکن"
+
+#: admin/class-whpts-settings.php:117
+msgid "Contact Property Name"
+msgstr "رابطہ پراپرٹی کا نام"
+
+#: admin/class-whpts-settings.php:197
+msgid "Testing connection..."
+msgstr "کنکشن ٹیسٹ کیا جا رہا ہے..."
+
+#: admin/class-whpts-settings.php:198
+msgid "Connection successful!"
+msgstr "کنکشن کامیاب!"
+
+#: admin/class-whpts-settings.php:199
+msgid "Connection failed: "
+msgstr "کنکشن ناکام ہوگیا: "
+
+#: admin/class-whpts-settings.php:200
+msgid "Filter products..."
+msgstr "مصنوعات فلٹر کریں..."
+
+#: admin/class-whpts-settings.php:215
+msgid "Configure your HubSpot Private App credentials. The token requires scopes: crm.objects.contacts.read, crm.objects.contacts.write, crm.schemas.contacts.read"
+msgstr "اپنے HubSpot پرائیویٹ ایپ کی اسناد ترتیب دیں۔ ٹوکن کو ان اسکوپس کی ضرورت ہے: crm.objects.contacts.read, crm.objects.contacts.write, crm.schemas.contacts.read"
+
+#: admin/class-whpts-settings.php:233
+msgid "Test Connection"
+msgstr "کنکشن ٹیسٹ کریں"
+
+#: admin/class-whpts-settings.php:237
+msgid "Enter your HubSpot Private App token. It will be stored securely and never exposed on the frontend."
+msgstr "اپنا HubSpot پرائیویٹ ایپ ٹوکن درج کریں۔ یہ محفوظ طریقے سے ذخیرہ کیا جائے گا اور کبھی بھی فرنٹ اینڈ پر ظاہر نہیں ہوگا۔"
+
+#: admin/class-whpts-settings.php:255
+msgid "The internal name of your HubSpot Contact property (Multiple Checkboxes type). Example: product_tag"
+msgstr "آپ کی HubSpot رابطہ پراپرٹی کا داخلی نام (متعدد چیک باکس کی قسم)۔ مثال: product_tag"
+
+#: admin/class-whpts-settings.php:276
+msgid "HubSpot Product Tag Sync"
+msgstr "HubSpot پروڈکٹ ٹیگ سنک"
+
+#: admin/class-whpts-settings.php:286
+msgid "Product Mappings"
+msgstr "پروڈکٹ میپنگز"
+
+#: admin/class-whpts-settings.php:358
+msgid "HubSpot API token not configured. Please set your token in the Settings tab first."
+msgstr "HubSpot API ٹوکن تشکیل نہیں دیا گیا ہے۔ براہ کرم پہلے سیٹنگز ٹیب میں اپنا ٹوکن سیٹ کریں۔"
+
+#: admin/class-whpts-settings.php:368
+msgid "Product mappings saved successfully."
+msgstr "پروڈکٹ میپنگز کامیابی سے محفوظ ہو گئیں۔"
+
+#: admin/class-whpts-settings.php:382
+#, php-format
+msgid "Could not load HubSpot tag options: %s"
+msgstr "HubSpot ٹیگ کے اختیارات لوڈ نہیں ہو سکے: %s"
+
+#: admin/class-whpts-settings.php:395
+msgid "Assign a HubSpot tag value to each WooCommerce product. Only products with a tag value will be synced to HubSpot when purchased."
+msgstr "ہر WooCommerce پروڈکٹ کو HubSpot ٹیگ ویلیو تفویض کریں۔ صرف ٹیگ ویلیو والی مصنوعات خریدنے پر HubSpot سے مطابقت پذیر ہوں گی۔"
+
+#: admin/class-whpts-settings.php:399
+msgid "Filter products by name..."
+msgstr "نام کے لحاظ سے مصنوعات فلٹر کریں..."
+
+#: admin/class-whpts-settings.php:402
+msgid "Reload tag options from HubSpot"
+msgstr "HubSpot سے ٹیگ کے اختیارات دوبارہ لوڈ کریں"
+
+#: admin/class-whpts-settings.php:403
+msgid "Refresh Tags"
+msgstr "ٹیگز ریفریش کریں"
+
+#: admin/class-whpts-settings.php:416
+msgid "ID"
+msgstr "آئی ڈی"
+
+#: admin/class-whpts-settings.php:419
+msgid "Product Name"
+msgstr "پروڈکٹ کا نام"
+
+#: admin/class-whpts-settings.php:422
+msgid "SKU"
+msgstr "SKU"
+
+#: admin/class-whpts-settings.php:425
+msgid "HubSpot Tag"
+msgstr "HubSpot ٹیگ"
+
+#: admin/class-whpts-settings.php:433
+msgid "No WooCommerce products found."
+msgstr "کوئی WooCommerce مصنوعات نہیں ملیں۔"
+
+#: admin/class-whpts-settings.php:459
+msgid "— None —"
+msgstr "— کوئی نہیں —"
+
+#: admin/class-whpts-settings.php:473
+msgid "e.g. stock_solace"
+msgstr "مثال: stock_solace"
+
+#: admin/class-whpts-settings.php:483
+msgid "Save Mappings"
+msgstr "میپنگز محفوظ کریں"
+
+#: admin/class-whpts-settings.php:506
+msgid "Security check failed."
+msgstr "سیکیورٹی چیک ناکام ہو گیا۔"
+
+#: admin/class-whpts-settings.php:511
+msgid "You do not have permission to manage these settings."
+msgstr "آپ کو ان ترتیبات کا نظم کرنے کی اجازت نہیں ہے۔"
+
+#: admin/class-whpts-settings.php:559
+msgid "Unauthorized."
+msgstr "غیر مجاز۔"
+
+#: admin/class-whpts-settings.php:568
+msgid "Please enter a token first."
+msgstr "براہ کرم پہلے ٹوکن درج کریں۔"
+
+#: admin/class-whpts-settings.php:587
+msgid "Connection successful! Token saved."
+msgstr "کنکشن کامیاب! ٹوکن محفوظ ہو گیا۔"

@@ -1,0 +1,138 @@
+/**
+ * Admin styles for Woo HubSpot Product Tag Sync.
+ *
+ * @package Woo_HubSpot_Product_Tag_Sync
+ * @since   1.0.0
+ */
+
+/* =============================================
+   Wrap & Page Layout
+   ============================================= */
+.whpts-wrap {
+	max-width: 1100px;
+}
+
+.whpts-wrap h1 {
+	font-size: 1.6em;
+	margin-bottom: 16px;
+}
+
+/* =============================================
+   Tab Navigation
+   ============================================= */
+.whpts-nav-tabs {
+	margin-bottom: 20px;
+}
+
+/* =============================================
+   Tab Content
+   ============================================= */
+.whpts-tab-content {
+	background: #fff;
+	border: 1px solid #ccd0d4;
+	border-top: none;
+	padding: 20px 24px;
+}
+
+/* =============================================
+   Mappings Table
+   ============================================= */
+.whpts-mappings-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 16px;
+	gap: 16px;
+}
+
+.whpts-mappings-header p {
+	margin: 0;
+	flex: 1;
+	color: #646970;
+}
+
+#whpts-product-filter {
+	min-width: 260px;
+}
+
+.whpts-mappings-table {
+	margin-top: 8px;
+}
+
+.whpts-col-id {
+	width: 60px;
+}
+
+.whpts-col-product {
+	width: 40%;
+}
+
+.whpts-col-sku {
+	width: 15%;
+}
+
+.whpts-col-tag {
+	width: auto;
+}
+
+.whpts-tag-input {
+	width: 100% !important;
+	max-width: 300px;
+}
+
+.whpts-tag-select {
+	width: 100%;
+	max-width: 300px;
+}
+
+.whpts-mappings-actions {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	flex-shrink: 0;
+}
+
+.whpts-mapping-row.whpts-hidden {
+	display: none;
+}
+
+/* =============================================
+   Connection Test
+   ============================================= */
+#whpts-test-connection {
+	margin-left: 8px;
+}
+
+#whpts-connection-status {
+	display: inline-block;
+	margin-left: 10px;
+	font-weight: 500;
+}
+
+#whpts-connection-status.whpts-success {
+	color: #00a32a;
+}
+
+#whpts-connection-status.whpts-error {
+	color: #d63638;
+}
+
+#whpts-connection-status.whpts-testing {
+	color: #2271b1;
+}
+
+/* =============================================
+   Settings Form Styling
+   ============================================= */
+.whpts-tab-content .form-table th {
+	padding-left: 0;
+}
+
+.whpts-tab-content .form-table td {
+	padding-bottom: 20px;
+}
+
+.whpts-tab-content .form-table td .description {
+	margin-top: 6px;
+	font-style: italic;
+}
