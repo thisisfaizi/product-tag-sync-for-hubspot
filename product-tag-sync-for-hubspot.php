@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name:       Product Tag Sync for WooCommerce & HubSpot
+ * Plugin Name:       Product Tag Sync for HubSpot
  * Description:       Automatically assign HubSpot contact tags based on WooCommerce product purchases. Map products to HubSpot custom property values and sync contacts on order completion.
  * Version:           1.0.0
  * Requires at least: 6.0

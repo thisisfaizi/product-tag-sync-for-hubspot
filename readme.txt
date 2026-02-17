@@ -1,4 +1,4 @@
-=== Product Tag Sync for WooCommerce & HubSpot ===
+=== Product Tag Sync for HubSpot ===
 Contributors: nowdigiverse
 Tags: woocommerce, hubspot, crm, product tags, contact sync
 Requires at least: 6.0
@@ -79,3 +79,9 @@ Yes. Multiple products can share the same tag value. If a customer purchases bot
 
 = 1.0.0 =
 Initial release.
+
+== Screenshots ==
+
+1. screenshot-1.png Settings Tab: Configure your HubSpot Private App token and Contact Property.
+2. screenshot-2.png Product Mappings: Easily map WooCommerce products to specific HubSpot tags.
+

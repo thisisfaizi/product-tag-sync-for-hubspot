@@ -1,0 +1,9 @@
+
+# Ignore built files
+*.zip
+*.po~
+# Ignore assets if generated in repo but not meant for distribution (though assets/ should be part of it, generated images might need review)
+# Ignoring specific temporary files
+image_prompts.md
+submission_note.txt
+svn-guide.md
