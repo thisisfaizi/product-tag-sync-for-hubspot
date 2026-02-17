@@ -53,9 +53,9 @@
 						$status
 							.text(
 								whptsAdmin.i18n.error +
-									(response.data && response.data.message
-										? response.data.message
-										: 'Unknown error')
+								(response.data && response.data.message
+									? response.data.message
+									: 'Unknown error')
 							)
 							.removeClass('whpts-success whpts-testing')
 							.addClass('whpts-error');
@@ -87,6 +87,49 @@
 					$(this).addClass('whpts-hidden');
 				}
 			});
+		});
+
+		// =============================================
+		// Product Rules (Properties Dropdown)
+		// =============================================
+		$(document).on('change', '.whpts-hubspot-property-select', function () {
+			var $select = $(this);
+			var propertyName = $select.val();
+			var $row = $select.closest('tr');
+			var $valueCell = $row.find('.whpts-value-cell');
+			var rowIndex = $select.attr('name').match(/\[(\d+|__INDEX__)\]/)[1];
+
+			// Find property in localized data
+			var property = null; // Default if not found
+			if (whptsAdmin.contactProperties && whptsAdmin.contactProperties.length) {
+				for (var i = 0; i < whptsAdmin.contactProperties.length; i++) {
+					if (whptsAdmin.contactProperties[i].name === propertyName) {
+						property = whptsAdmin.contactProperties[i];
+						break;
+					}
+				}
+			}
+
+			// Debug
+			console.log('Selected Property:', propertyName);
+			console.log('Property Data:', property);
+
+			var html = '';
+			if (property && property.options && property.options.length > 0) {
+				// Render select
+				html = '<select name="whpts_product_rule[' + rowIndex + '][value]" class="regular-text">';
+				html += '<option value="">' + 'Select value...' + '</option>';
+				for (var j = 0; j < property.options.length; j++) {
+					var opt = property.options[j];
+					html += '<option value="' + opt.value + '">' + (opt.label || opt.value) + '</option>';
+				}
+				html += '</select>';
+			} else {
+				// Render text input
+				html = '<input type="text" name="whpts_product_rule[' + rowIndex + '][value]" value="" class="regular-text" placeholder="e.g. Consultant" />';
+			}
+
+			$valueCell.html(html);
 		});
 	});
 })(jQuery);

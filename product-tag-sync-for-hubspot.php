@@ -74,3 +74,16 @@ function whpts_woocommerce_missing_notice()
 	</div>
 	<?php
 }
+
+/**
+ * Declare HPOS compatibility for WooCommerce.
+ *
+ * @since 1.0.0
+ */
+function whpts_declare_hpos_compatibility()
+{
+	if (class_exists(\Automattic\WooCommerce\Utilities\FeaturesUtil::class)) {
+		\Automattic\WooCommerce\Utilities\FeaturesUtil::declare_compatibility('custom_order_tables', __FILE__, true);
+	}
+}
+add_action('before_woocommerce_init', 'whpts_declare_hpos_compatibility');

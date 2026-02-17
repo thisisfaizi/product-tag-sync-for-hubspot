@@ -58,7 +58,7 @@ class WHPTS_Plugin
 
         // Initialize admin settings.
         if (is_admin()) {
-            $this->settings = new WHPTS_Settings();
+            $this->settings = new WHPTS_Settings($this->api);
             $this->settings->init();
         }
 
