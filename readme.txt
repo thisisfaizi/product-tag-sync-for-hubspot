@@ -2,7 +2,7 @@
 Contributors: nowdigiverse
 Tags: woocommerce, hubspot, crm, product tags, contact sync
 Requires at least: 6.0
-Tested up to: 6.9
+Tested up to: 7.0
 Requires PHP: 7.4
 Stable tag: 1.0.0
 License: GPLv2 or later
@@ -63,6 +63,23 @@ The plugin fails silently and logs the error. Your customers' checkout experienc
 = Can I map multiple products to the same tag? =
 
 Yes. Multiple products can share the same tag value. If a customer purchases both, the tag will only appear once.
+
+== External services ==
+
+This plugin connects to the HubSpot CRM API (api.hubapi.com) to sync your WooCommerce customers as HubSpot contacts and tag them based on the products they purchase. HubSpot is a third-party service and is required for this plugin to function; you must provide your own HubSpot account and Private App token.
+
+What data is sent, and when:
+
+* When a customer places an order that contains a mapped product, the plugin sends that customer's email address and the mapped tag value(s) to HubSpot in order to create or update the matching contact record.
+* When you click "Test Connection" in the plugin settings, the plugin sends a request to HubSpot using your token to verify that the connection works.
+* When you open the Product Mappings tab or click "Refresh Tags", the plugin requests your configured contact property definition from HubSpot to load its available tag options.
+
+Data is only ever sent after you have entered a valid HubSpot Private App token and configured your mappings. No data is sent from the site frontend, and the plugin does not transmit data to any service other than HubSpot.
+
+This service is provided by HubSpot, Inc. Please review their policies:
+
+* Terms of Service: https://legal.hubspot.com/terms-of-service
+* Privacy Policy: https://legal.hubspot.com/privacy-policy
 
 == Changelog ==
 
